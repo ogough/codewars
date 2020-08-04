@@ -25,14 +25,3 @@ def triangle(row):
           next_row.append(colour_change(current_row[j],current_row[j+1]))          
         current_row = next_row
     return str(current_row[0])
-
-basic_cases = [
-    ['B', 'B'],
-    ['GB', 'R'],
-    ['RRR', 'R'],
-    ['RGBG', 'B'],
-    ['RBRGBRB', 'G'],
-    ['RBRGBRBGGRRRBGBBBGG', 'G']
-]
-
-print(triangle('RBRGBRBGGRRRBGBBBGG'))
